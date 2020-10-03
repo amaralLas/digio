@@ -13,7 +13,7 @@ protocol HomeViewModelViewDelegate {
 class HomeViewModel {
     
     weak var coordinator: AppCoordinator!
-    lazy var service: HomeService = { HomeService(delegate: self)}()
+    lazy var service = HomeService()
     
     var data: HomeModel?
     
@@ -25,16 +25,12 @@ class HomeViewModel {
     }
     
     func fetchData() {
-        service.fetchDataFromAPI()
-    }
-}
-
-extension HomeViewModel: HomeServiceDelegate {
-    func didFetchDataFromAPI(data: HomeModel) {
-        self.data = data
-    }
-    
-    func didFetchDataFailFromAPI() {
-        viewDelagate?.didFetchDataFailFromAPI(sender: self)
+        service.fetchDataFromAPI { (data, error) in
+            if data != nil {
+                self.data = data
+            } else {
+                self.viewDelagate?.didFetchDataFailFromAPI(sender: self)
+            }
+        }
     }
 }
