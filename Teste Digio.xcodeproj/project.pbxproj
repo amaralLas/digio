@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FBE36F02529667E005C29BC /* SpotlightCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE36EE2529667E005C29BC /* SpotlightCellCollectionViewCell.swift */; };
+		1FBE36F12529667E005C29BC /* SpotlightCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE36EF2529667E005C29BC /* SpotlightCellCollectionViewCell.xib */; };
+		1FBE36F425296852005C29BC /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE36F225296852005C29BC /* ProductCell.swift */; };
+		1FBE36F525296852005C29BC /* ProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FBE36F325296852005C29BC /* ProductCell.xib */; };
+		1FC28E8F252B36AB00B9F5E5 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FC28E8E252B36AB00B9F5E5 /* UIView.swift */; };
 		2910F34DDA301046EFE87A02 /* Pods_Teste_Digio_Teste_DigioUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0051AEDA68852613BA8EF3E8 /* Pods_Teste_Digio_Teste_DigioUITests.framework */; };
 		4E370A9E27C5303BB641D165 /* Pods_Teste_DigioTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AE3E55BA412EC2BCE595C3 /* Pods_Teste_DigioTests.framework */; };
 		C25EBA6BC3E85BA782CA8530 /* Pods_Teste_Digio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2658E29958494F865C2E0AF8 /* Pods_Teste_Digio.framework */; };
@@ -42,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		0051AEDA68852613BA8EF3E8 /* Pods_Teste_Digio_Teste_DigioUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teste_Digio_Teste_DigioUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBE36EE2529667E005C29BC /* SpotlightCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotlightCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		1FBE36EF2529667E005C29BC /* SpotlightCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpotlightCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		1FBE36F225296852005C29BC /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		1FBE36F325296852005C29BC /* ProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductCell.xib; sourceTree = "<group>"; };
+		1FC28E8E252B36AB00B9F5E5 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		2658E29958494F865C2E0AF8 /* Pods_Teste_Digio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Teste_Digio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A21A29CC7324C1C498B18A /* Pods-Teste Digio-Teste DigioUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teste Digio-Teste DigioUITests.debug.xcconfig"; path = "Target Support Files/Pods-Teste Digio-Teste DigioUITests/Pods-Teste Digio-Teste DigioUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		305988FF91DDBDA420211D94 /* Pods-Teste DigioTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teste DigioTests.release.xcconfig"; path = "Target Support Files/Pods-Teste DigioTests/Pods-Teste DigioTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +107,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FBE36E7252951CD005C29BC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE36EE2529667E005C29BC /* SpotlightCellCollectionViewCell.swift */,
+				1FBE36EF2529667E005C29BC /* SpotlightCellCollectionViewCell.xib */,
+				1FBE36F225296852005C29BC /* ProductCell.swift */,
+				1FBE36F325296852005C29BC /* ProductCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1FC28E8D252B369200B9F5E5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FC28E8E252B36AB00B9F5E5 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		78B2F5EC6B978275F8EC39AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +174,7 @@
 		E9E660C9252772340020FABE /* Teste Digio */ = {
 			isa = PBXGroup;
 			children = (
+				1FC28E8D252B369200B9F5E5 /* Extensions */,
 				E9E660FA252775980020FABE /* Home */,
 				E9E660CA252772340020FABE /* AppDelegate.swift */,
 				E9E660D3252772370020FABE /* Assets.xcassets */,
@@ -211,6 +241,7 @@
 		E9E66100252775FE0020FABE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FBE36E7252951CD005C29BC /* Cell */,
 				E9E660CE252772340020FABE /* HomeViewController.swift */,
 				E9E66106252796A60020FABE /* HomeViewController.xib */,
 			);
@@ -327,6 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E660D7252772370020FABE /* LaunchScreen.storyboard in Resources */,
+				1FBE36F12529667E005C29BC /* SpotlightCellCollectionViewCell.xib in Resources */,
+				1FBE36F525296852005C29BC /* ProductCell.xib in Resources */,
 				E9E660D4252772370020FABE /* Assets.xcassets in Resources */,
 				E9E66107252796A60020FABE /* HomeViewController.xib in Resources */,
 			);
@@ -457,10 +490,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9E6610B2527A11D0020FABE /* HomeService.swift in Sources */,
+				1FBE36F02529667E005C29BC /* SpotlightCellCollectionViewCell.swift in Sources */,
 				E9E660FC252775C20020FABE /* AppCoordinator.swift in Sources */,
 				E9E660CF252772340020FABE /* HomeViewController.swift in Sources */,
 				E9E660CB252772340020FABE /* AppDelegate.swift in Sources */,
+				1FBE36F425296852005C29BC /* ProductCell.swift in Sources */,
 				E9E6610925279F480020FABE /* HomeModel.swift in Sources */,
+				1FC28E8F252B36AB00B9F5E5 /* UIView.swift in Sources */,
 				E9E6610525277A640020FABE /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
