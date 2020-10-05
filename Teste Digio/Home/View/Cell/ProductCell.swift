@@ -20,11 +20,11 @@ class ProductCell: UICollectionViewCell {
     }
     
     func setup(item: HomeModel.Product) {
-        viewCell.
         viewCell.layer.shadowColor = UIColor.black.cgColor
         viewCell.layer.shadowOpacity = 1
         viewCell.layer.shadowOffset = .zero
-        viewCell.layer.shadowRadius = 3.0
+        viewCell.layer.shadowPath = UIBezierPath(rect: viewCell.bounds).cgPath
+        viewCell.setBorderRadius(radius: 20)
         viewCell.clipsToBounds = true
         if let url = item.imageURL {
             imgCell.kf.setImage(with: URL(string: url))
