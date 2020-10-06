@@ -26,7 +26,7 @@ class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vm = HomeViewModel(coordinator: self)
+        let vm = HomeViewModel()
         let vc = HomeViewController(viewModel: vm)
         vm.viewDelagate = vc
         navController.pushViewController(vc, animated: true)

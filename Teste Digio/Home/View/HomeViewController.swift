@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
+        viewModel.fetchData()
         super.init(nibName: nil, bundle: nil)
     }
     

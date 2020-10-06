@@ -19,13 +19,14 @@
 		E9E660CF252772340020FABE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E660CE252772340020FABE /* HomeViewController.swift */; };
 		E9E660D4252772370020FABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9E660D3252772370020FABE /* Assets.xcassets */; };
 		E9E660D7252772370020FABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9E660D5252772370020FABE /* LaunchScreen.storyboard */; };
-		E9E660E2252772370020FABE /* Teste_DigioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E660E1252772370020FABE /* Teste_DigioTests.swift */; };
 		E9E660ED252772370020FABE /* Teste_DigioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E660EC252772370020FABE /* Teste_DigioUITests.swift */; };
 		E9E660FC252775C20020FABE /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E660FB252775C20020FABE /* AppCoordinator.swift */; };
 		E9E6610525277A640020FABE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6610425277A640020FABE /* HomeViewModel.swift */; };
 		E9E66107252796A60020FABE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9E66106252796A60020FABE /* HomeViewController.xib */; };
 		E9E6610925279F480020FABE /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6610825279F480020FABE /* HomeModel.swift */; };
 		E9E6610B2527A11D0020FABE /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6610A2527A11D0020FABE /* HomeService.swift */; };
+		E9E6610F252BAE4B0020FABE /* HomeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E6610E252BAE4B0020FABE /* HomeViewModelTest.swift */; };
+		E9E66112252BB3640020FABE /* HomeServiceSucessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E66111252BB3640020FABE /* HomeServiceSucessMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +68,6 @@
 		E9E660D6252772370020FABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9E660D8252772370020FABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E660DD252772370020FABE /* Teste DigioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teste DigioTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9E660E1252772370020FABE /* Teste_DigioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste_DigioTests.swift; sourceTree = "<group>"; };
 		E9E660E3252772370020FABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9E660E8252772370020FABE /* Teste DigioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teste DigioUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9E660EC252772370020FABE /* Teste_DigioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste_DigioUITests.swift; sourceTree = "<group>"; };
@@ -77,6 +77,8 @@
 		E9E66106252796A60020FABE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		E9E6610825279F480020FABE /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		E9E6610A2527A11D0020FABE /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		E9E6610E252BAE4B0020FABE /* HomeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTest.swift; sourceTree = "<group>"; };
+		E9E66111252BB3640020FABE /* HomeServiceSucessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceSucessMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,7 +190,7 @@
 		E9E660E0252772370020FABE /* Teste DigioTests */ = {
 			isa = PBXGroup;
 			children = (
-				E9E660E1252772370020FABE /* Teste_DigioTests.swift */,
+				E9E66110252BB3440020FABE /* Home */,
 				E9E660E3252772370020FABE /* Info.plist */,
 			);
 			path = "Teste DigioTests";
@@ -246,6 +248,15 @@
 				E9E66106252796A60020FABE /* HomeViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		E9E66110252BB3440020FABE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E9E6610E252BAE4B0020FABE /* HomeViewModelTest.swift */,
+				E9E66111252BB3640020FABE /* HomeServiceSucessMock.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,7 +516,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9E660E2252772370020FABE /* Teste_DigioTests.swift in Sources */,
+				E9E66112252BB3640020FABE /* HomeServiceSucessMock.swift in Sources */,
+				E9E6610F252BAE4B0020FABE /* HomeViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

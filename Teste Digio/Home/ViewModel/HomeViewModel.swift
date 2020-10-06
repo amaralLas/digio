@@ -14,8 +14,8 @@ protocol HomeViewModelViewDelegate {
 
 class HomeViewModel {
     
-    weak var coordinator: AppCoordinator!
-    lazy var service = HomeService()
+    weak var coordinator: AppCoordinator?
+    lazy var service:HomeServiceProtocol = HomeService()
     
     let user_img = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTw4xIzlTTRJKIQB1tq1Jbs5Rfj7hU6h1UtPg&usqp=CAU"
     
@@ -32,11 +32,6 @@ class HomeViewModel {
     }
     
     var viewDelagate: HomeViewModelViewDelegate?
-    
-    init(coordinator: AppCoordinator) {
-        self.coordinator = coordinator
-        fetchData()
-    }
     
     func fetchData() {
         service.fetchDataFromAPI { (data, error) in
